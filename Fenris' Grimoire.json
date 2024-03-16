@@ -75,7 +75,8 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"uniqueId": "948d7d66-5ec0-44c1-bce0-cbde72a93699"
 		},
 		{
 			"name": "Wildstrike",
@@ -136,9 +137,11 @@
 						"source": "PHB"
 					}
 				]
-			}
+			},
+			"uniqueId": "faa80d31-1165-4d0d-9c5a-290e1b861bf3"
 		},
 		{
+			"uniqueId": "169efa55-af5f-4d88-885e-d93b1b1e25ea",
 			"name": "Fireflow",
 			"level": 4,
 			"school": "T",
@@ -224,6 +227,7 @@
 			]
 		},
 		{
+			"uniqueId": "4fbe2812-8a84-4125-8f98-c9ab41f4e453",
 			"name": "Fire Aura",
 			"level": 4,
 			"school": "T",
@@ -295,6 +299,7 @@
 			]
 		},
 		{
+			"uniqueId": "338ddf9a-6e7c-4ab6-a337-01fca3b9c4dc",
 			"name": "Fire Charm",
 			"level": 4,
 			"school": "E",
@@ -361,6 +366,7 @@
 			]
 		},
 		{
+			"uniqueId": "07ee011d-07c0-4950-8272-3970078fe5dc",
 			"name": "Fire Gate",
 			"level": 4,
 			"school": "C",
@@ -418,6 +424,7 @@
 			]
 		},
 		{
+			"uniqueId": "58fa0a00-8e54-4dd5-af7e-17c1dc0dced6",
 			"name": "Forest's Fiery Constrictor",
 			"level": 6,
 			"school": "T",
@@ -495,6 +502,7 @@
 			]
 		},
 		{
+			"uniqueId": "a81d100a-20ff-4fbe-a3b9-338930161e61",
 			"name": "Malec-Keth's Flaming Fist",
 			"level": 7,
 			"school": "V",
@@ -555,6 +563,7 @@
 			]
 		},
 		{
+			"uniqueId": "0af7e001-c876-44ab-901b-909f6083e317",
 			"name": "Nchaser's Glowing Globe",
 			"level": 3,
 			"school": "T",
@@ -610,6 +619,7 @@
 			]
 		},
 		{
+			"uniqueId": "7b3cf7d8-0a74-4b32-8666-ee438a646f2b",
 			"name": "Elminster's Effulgent Epuration",
 			"level": 9,
 			"school": "A",
@@ -661,6 +671,7 @@
 			}
 		},
 		{
+			"uniqueId": "ae3215e1-5cd6-45ad-b56a-c70277d9daaf",
 			"name": "Missile Mastery",
 			"level": 4,
 			"school": "T",
@@ -723,6 +734,7 @@
 			]
 		},
 		{
+			"uniqueId": "b6ee047c-975d-42bc-a74f-c39a6b64c188",
 			"name": "Metamorphose Liquids",
 			"level": 1,
 			"school": "T",
@@ -785,6 +797,7 @@
 			]
 		},
 		{
+			"uniqueId": "ce197949-a9d4-472c-88ca-9b3b76bd692d",
 			"name": "Hatch the Stone from the Egg",
 			"level": 7,
 			"school": "T",
@@ -840,6 +853,7 @@
 			}
 		},
 		{
+			"uniqueId": "fda8c962-0374-4a0b-9be9-cade675c446f",
 			"name": "Glorious Transmutation",
 			"level": 9,
 			"school": "T",
@@ -887,6 +901,7 @@
 			}
 		},
 		{
+			"uniqueId": "7de28b04-9a25-47cf-95e8-a657d04388fe",
 			"name": "Homunculus Shield",
 			"level": 1,
 			"school": "T",
@@ -938,6 +953,7 @@
 			}
 		},
 		{
+			"uniqueId": "9b0c08fe-2a17-4927-8a11-bb5229839ed9",
 			"name": "Alamir's Fundamental Breakdown",
 			"level": 1,
 			"school": "D",
@@ -987,6 +1003,7 @@
 			}
 		},
 		{
+			"uniqueId": "967f01ff-3f98-4ad7-9111-105a73278709",
 			"name": "Ventriloquism",
 			"level": 1,
 			"school": "I",
@@ -1045,6 +1062,7 @@
 			}
 		},
 		{
+			"uniqueId": "072c5e87-20cf-4961-a735-e0c0ab0eb645",
 			"name": "Shout",
 			"level": 4,
 			"school": "V",
@@ -1116,6 +1134,7 @@
 			]
 		},
 		{
+			"uniqueId": "758074b8-aaef-4e40-83bd-fc18affd6d4b",
 			"name": "Leomund's Lamentable Belaborment",
 			"level": 5,
 			"school": "E",
@@ -1188,6 +1207,7 @@
 			]
 		},
 		{
+			"uniqueId": "0c0c3048-aaca-4122-844a-e4d0c328071f",
 			"name": "Wail of the Banshee",
 			"level": 9,
 			"school": "N",
@@ -1238,6 +1258,7 @@
 			}
 		},
 		{
+			"uniqueId": "6d3675aa-8868-4bb9-8b93-12a03f3a1cbc",
 			"name": "Presper' Moonbow",
 			"level": 5,
 			"school": "V",
@@ -1331,6 +1352,7 @@
 			]
 		},
 		{
+			"uniqueId": "f3a73ed2-2755-4a5b-bff3-97c144bf8cb5",
 			"name": "Permanency",
 			"level": 5,
 			"school": "T",
@@ -1385,10 +1407,77 @@
 				"v": true,
 				"s": true
 			}
+		},
+		{
+			"uniqueId": "807ffaee-4e2d-4ada-8179-42f6a7dac2ae",
+			"name": "Acid Bolt",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Wizard, Sorcerer)*",
+				"(Rare)",
+				"__________",
+				"You Conjure 4 tear shaped orbs of flesh corrosive acid. You can Hurl up to two orbs at a creature or object with in 200ft with in range taht you are aware of. The orbs then fly at the target weaving trough and avoiding any obstacle. ",
+				"The target , if able must make a Dex Save be hit. On a success the Target takes {@dice 4d4} acid dmg an no other effect. On a failure the Target takes {@dice 4d4} acid dmg and at the start of each of their turns {@dice 2d4} acid dmg until the spell ends, the acid is cleaned with Wine or Vinegar, is dispelled or ended by the caster. Any Mundane equipment and items carried by the target receives a -1 each turn , upon reaching -5 the items are destroyed. Large objects use their hp as normal and this spell only affects a 5ft squared area."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Acid bolt creates an additional orb of acid with each slot above 4th used to cast it and allows you to hurl 1 aditional orb"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"abilityCheck": [
+				"dexterity"
+			]
 		}
 	],
 	"monster": [
 		{
+			"uniqueId": "af4e36ad-3c18-4973-b4be-158e82ac3ef5",
 			"name": "Quasit",
 			"size": [
 				"T"
@@ -1540,6 +1629,7 @@
 			]
 		},
 		{
+			"uniqueId": "05b50fe0-2195-44ab-97a6-b6ef23449491",
 			"name": "Swarm of Quasits",
 			"size": [
 				"M"
