@@ -1475,3 +1475,324 @@
 			]
 		}
 	],
+	"monster": [
+		{
+			"uniqueId": "af4e36ad-3c18-4973-b4be-158e82ac3ef5",
+			"name": "Quasit",
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"Demon"
+				]
+			},
+			"source": "FenrisGrimoire",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "3d4",
+				"average": 7
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 5,
+			"dex": 17,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "1",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"skill": {
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical sources",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The Quasit can use its action to polymorph into a beast form that resembles a bat (speed 10 feet fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The quasit has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Claw (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or take 5 ({@damage 2d4}) poison damage and become {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Scare (1/day)",
+					"entries": [
+						"One creature of the quasit's choice within 20 feet of it must succeed on a {@dc 10} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The quasit magically turns {@condition invisible} until it attacks or uses Scare, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the quasit wears or carries is {@condition invisible} with it."
+					]
+				},
+				{
+					"name": "Grope, Search, Snatch",
+					"entries": [
+						"The Quasit atempts to steal something, undo clothes and armor or disarm a creature. The Target must make a Dc13(+1 for each quasit doing this) or have a random item stolen or what they are holding snatched. If the quasit is trying to undo armor it takes 10 uses of this, the time required is redused by one for each quasit doing the same to the same target, the armor peices are droped at the feet of the target."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened",
+				"invisible",
+				"poisoned"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Ruin",
+					"entries": [
+						"The Quasit ruins an item that is not being held or worn (can be carried in a bag or similar). Food and Water spoils and become inedible, Mundane Armor,weapons and Adventurer's Gear and tools Resieve a -1 and are destroyed at a -5, Clothes become hole filled , potions stop being magical and scrolls are ripped."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"familiar": true,
+			"tokenHref": {
+				"type": "internal",
+				"path": "https://5e.tools/img/bestiary/tokens/MM/Quasit.webp"
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "05b50fe0-2195-44ab-97a6-b6ef23449491",
+			"name": "Swarm of Quasits",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"swarmSize": "T",
+				"tags": [
+					"Demon"
+				]
+			},
+			"source": "FenrisGrimoire",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "30d4",
+				"average": 75
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 5,
+			"dex": 17,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "5",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"skill": {
+				"sleight of hand": "+6",
+				"stealth": "+6"
+			},
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical sources",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The Quasit can use its action to polymorph into a beast form that resembles a bat (speed 10 feet fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The quasit has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"This is a swarm of 10 quasits, they can ocupy the same space as other creatures. each 7 dmg means 1 dead quasit. For each additional quasit this swarm gains 7 hp to a max of 10 quasits in a single swarm"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiatack",
+					"entries": [
+						"The swarm atacks twice with their claws. "
+					]
+				},
+				{
+					"name": "Claw (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 3d4 + 3}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw or take 5 ({@damage 2d4}) poison damage and become {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Scare (1/day)",
+					"entries": [
+						"One creature of the quasit's choice within 20 feet of it must succeed on a {@dc 14} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The quasit magically turns {@condition invisible} until it attacks or uses Scare, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the quasit wears or carries is {@condition invisible} with it."
+					]
+				},
+				{
+					"name": "Grope, Search, Snatch",
+					"entries": [
+						"The Quasit atempts to steal something, undo clothes and armor or disarm a creature. The Target must make a Dc17 or have a random item stolen or what they are holding snatched. If the quasit is trying to undo armor it takes 10 uses of this, the time required is redused by one for each quasit doing the same to the same target, the armor peices are droped at the feet of the target.",
+						"A Swarm of 10 quasits can fully undress an armored knight in a single round"
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened",
+				"invisible",
+				"poisoned"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Ruin",
+					"entries": [
+						"The Quasit ruins 3 item that is not being held or worn (can be carried in a bag or similar). Food and Water spoils and become inedible, Mundane Armor,weapons and Adventurer's Gear and tools Resieve a -1 and are destroyed at a -5, Clothes become hole filled , potions stop being magical and scrolls are ripped."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"familiar": true,
+			"tokenHref": {
+				"type": "internal",
+				"path": "https://5e.tools/img/bestiary/tokens/MM/Quasit.webp"
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		}
+	]
+}
