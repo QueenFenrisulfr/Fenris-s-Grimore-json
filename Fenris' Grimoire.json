@@ -1475,40 +1475,6 @@
 			]
 		}
 	],
-	{
-	"name": "Test spell",
-	"level": 1,
-	"school": "A",
-	"time": [
-		{
-			"number": 1,
-			"unit": "action"
-		}
-	],
-	"range": {
-		"type": "point",
-		"distance": {
-			"type": "self"
-		}
-	},
-	"duration": [
-		{
-			"type": "instant"
-		}
-	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		]
-	},
-	"entries": [
-		"this is a test"
-	],
-	"source": "FenrissGrimoire"
-},
 	"monster": [
 		{
 			"uniqueId": "af4e36ad-3c18-4973-b4be-158e82ac3ef5",
