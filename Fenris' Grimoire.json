@@ -75,8 +75,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"uniqueId": "948d7d66-5ec0-44c1-bce0-cbde72a93699"
+			}
 		},
 		{
 			"name": "Wildstrike",
@@ -137,11 +136,9 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"uniqueId": "faa80d31-1165-4d0d-9c5a-290e1b861bf3"
+			}
 		},
 		{
-			"uniqueId": "169efa55-af5f-4d88-885e-d93b1b1e25ea",
 			"name": "Fireflow",
 			"level": 4,
 			"school": "T",
@@ -227,7 +224,6 @@
 			]
 		},
 		{
-			"uniqueId": "4fbe2812-8a84-4125-8f98-c9ab41f4e453",
 			"name": "Fire Aura",
 			"level": 4,
 			"school": "T",
@@ -299,7 +295,6 @@
 			]
 		},
 		{
-			"uniqueId": "338ddf9a-6e7c-4ab6-a337-01fca3b9c4dc",
 			"name": "Fire Charm",
 			"level": 4,
 			"school": "E",
@@ -366,7 +361,6 @@
 			]
 		},
 		{
-			"uniqueId": "07ee011d-07c0-4950-8272-3970078fe5dc",
 			"name": "Fire Gate",
 			"level": 4,
 			"school": "C",
@@ -424,7 +418,6 @@
 			]
 		},
 		{
-			"uniqueId": "58fa0a00-8e54-4dd5-af7e-17c1dc0dced6",
 			"name": "Forest's Fiery Constrictor",
 			"level": 6,
 			"school": "T",
@@ -502,7 +495,6 @@
 			]
 		},
 		{
-			"uniqueId": "a81d100a-20ff-4fbe-a3b9-338930161e61",
 			"name": "Malec-Keth's Flaming Fist",
 			"level": 7,
 			"school": "V",
@@ -563,7 +555,6 @@
 			]
 		},
 		{
-			"uniqueId": "0af7e001-c876-44ab-901b-909f6083e317",
 			"name": "Nchaser's Glowing Globe",
 			"level": 3,
 			"school": "T",
@@ -619,7 +610,6 @@
 			]
 		},
 		{
-			"uniqueId": "7b3cf7d8-0a74-4b32-8666-ee438a646f2b",
 			"name": "Elminster's Effulgent Epuration",
 			"level": 9,
 			"school": "A",
@@ -671,7 +661,6 @@
 			}
 		},
 		{
-			"uniqueId": "ae3215e1-5cd6-45ad-b56a-c70277d9daaf",
 			"name": "Missile Mastery",
 			"level": 4,
 			"school": "T",
@@ -734,7 +723,6 @@
 			]
 		},
 		{
-			"uniqueId": "b6ee047c-975d-42bc-a74f-c39a6b64c188",
 			"name": "Metamorphose Liquids",
 			"level": 1,
 			"school": "T",
@@ -797,7 +785,6 @@
 			]
 		},
 		{
-			"uniqueId": "ce197949-a9d4-472c-88ca-9b3b76bd692d",
 			"name": "Hatch the Stone from the Egg",
 			"level": 7,
 			"school": "T",
@@ -853,7 +840,6 @@
 			}
 		},
 		{
-			"uniqueId": "fda8c962-0374-4a0b-9be9-cade675c446f",
 			"name": "Glorious Transmutation",
 			"level": 9,
 			"school": "T",
@@ -901,7 +887,6 @@
 			}
 		},
 		{
-			"uniqueId": "7de28b04-9a25-47cf-95e8-a657d04388fe",
 			"name": "Homunculus Shield",
 			"level": 8,
 			"school": "T",
@@ -953,7 +938,6 @@
 			}
 		},
 		{
-			"uniqueId": "9b0c08fe-2a17-4927-8a11-bb5229839ed9",
 			"name": "Alamir's Fundamental Breakdown",
 			"level": 1,
 			"school": "D",
@@ -1003,7 +987,6 @@
 			}
 		},
 		{
-			"uniqueId": "967f01ff-3f98-4ad7-9111-105a73278709",
 			"name": "Ventriloquism",
 			"level": 1,
 			"school": "I",
@@ -1062,7 +1045,6 @@
 			}
 		},
 		{
-			"uniqueId": "072c5e87-20cf-4961-a735-e0c0ab0eb645",
 			"name": "Shout",
 			"level": 4,
 			"school": "V",
@@ -1134,7 +1116,6 @@
 			]
 		},
 		{
-			"uniqueId": "758074b8-aaef-4e40-83bd-fc18affd6d4b",
 			"name": "Leomund's Lamentable Belaborment",
 			"level": 5,
 			"school": "E",
@@ -1207,7 +1188,6 @@
 			]
 		},
 		{
-			"uniqueId": "0c0c3048-aaca-4122-844a-e4d0c328071f",
 			"name": "Wail of the Banshee",
 			"level": 9,
 			"school": "N",
@@ -1258,7 +1238,6 @@
 			}
 		},
 		{
-			"uniqueId": "6d3675aa-8868-4bb9-8b93-12a03f3a1cbc",
 			"name": "Presper' Moonbow",
 			"level": 5,
 			"school": "V",
@@ -1352,14 +1331,13 @@
 			]
 		},
 		{
-			"uniqueId": "f3a73ed2-2755-4a5b-bff3-97c144bf8cb5",
 			"name": "Permanency",
-			"level": 5,
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -1390,26 +1368,16 @@
 				"(Artificer, Wizard)",
 				"(Rare)",
 				"_______________________",
-				"You gather and lock the Arcane energies of a currently active spell. You Choose a cumulative 3 lvls of active spells with in range with a duration of at least one minute and you change their duration , Until dispelled, with no {@status concentration} required. Only the duration of the spell or spells is changed,  all other factors of the spell, such as saves allowed at end of the turn remain as normal. A Creature may only be affected by a single instance of permanency, if you cast permanency again on the same creature, the previous spells end , replaced by the new instance of permanency. ",
-				"Spells whose dmg increase each turn are limited to their normal Maximun amount of die, such as delayed blast fire ball maxes at {@dice 120d6}"
+				"You gather and lock the Arcane energies of a currently active spell. You a spell up to lvl 5 with in range with a duration of at least  ten minutes and you change their duration , Until dispelled, with no {@status concentration} required. Only the duration of the spell,  all other factors of the spell that may end it, such as saves allowed at end of the turn remain as normal. A Creature may only be affected by a single instance of permanency, if you cast permanency again on the same creature, the previous spells end , replaced by the new instance of permanency. The DM may veto a spell or add side effects,  such as \"Haste makes you age 1 year per hour\" \"enhance ability starts to turn you into the chosen animal\" \"protection from evil and good, blocks luck or the boons of healing from good sources\"",
+				"Spells whose dmg increase each turn are limited to their normal Maximum amount of die, such as delayed blast fire ball maxes at {@dice 120d6}"
 			],
 			"source": "FenrisGrimoire",
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						" For each slot above 5th lvl used to cast this spell increased the comulative lvl of spells by 1 lvl, so casting this spell at 6th lvl you can affect 4lvls of active spell effects. At 9th lvl you may affect up to 8 lvls of active spell effects instead of 7."
-					]
-				}
-			],
 			"components": {
 				"v": true,
 				"s": true
 			}
 		},
 		{
-			"uniqueId": "807ffaee-4e2d-4ada-8179-42f6a7dac2ae",
 			"name": "Acid Bolt",
 			"level": 4,
 			"school": "C",
@@ -1473,11 +1441,495 @@
 			"abilityCheck": [
 				"dexterity"
 			]
+		},
+		{
+			"name": "Rebirth",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Cleric, Druid, Warlock, Wizard)*",
+				"*Frequency* Rare",
+				"_____________________________",
+				"You touch a Creature that is at any stage of pregnancy or an Egg from a creature with an inteligence of 8 or higher, and implant the soul of a creature that died with in the past 7 days into them. If the creature is unwilling they must make a con save, on a success they cant be target of this spell for 7 days, on a failure the spell works as normal.",
+				"The Soul inhabits the childs to be continues the gestation period as normal. At the end of the Period the creature reborn.",
+				"The Reborn Creature has no memories of who they were in their past life past strange cryptic dreams, as they grow they naturally gain all abilities, class lvls , skills , proficiencies and cr they previously had , aslong they dont conflict with their new life, the speed of this is usualy by the time they are 5 but is up to the DM. ",
+				"In this new life they retain any fate or destiny they may had before death. Beside this, the creature now qualifies as a new diferent creature and person",
+				"The creature may regain the memories of their previous life trouh a Greater Restoration casted at lvl 9 or a wish, whoever unless their personality and alignment is also restored is up to the New personality to decide how they will act with their previous life's memories."
+			],
+			"source": "FenrisGrimoire",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If spell is casted as a lvl 5 spell the creature may be reborn after 10 years dead, the material component increases to 1000gp. If this spell is casted as a 9th lvl spell the creature may be reborn after 1000 years dead , the components increase to 10000 gp"
+					]
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Oils and Incence worth atleast 100gp wich the  spell consumes",
+					"consume": true
+				}
+			}
+		},
+		{
+			"name": "Mirage Missile",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Paladin, Ranger, Warlock, Wizard)*",
+				"- **Frequency** Common for Desert mages , rare otherwhise",
+				"______",
+				"You touch and Knock the arrow used in the spell's casting then make a ranged attack as part of the spell with it against one creature within the weapon's main range. On a hit the target and all creatures within in 5ft of them are trapped in an illusion, believing all their surroundings are the desert and they are dying of exposure no mater what they do. The Targets take {@dice 2d6} Psychic dmg and fall {@condition prone}, only able to move at half speed by dragging themselves. At the end of each turn the affected creatures take {@dice 2d6} psychic dmg. ",
+				"No mater what they do a creature remains trapped in an illusion unless they use their turn  performing an investigation check vs the dc, disbelieving the illusion on a success, creatures have adv on this check if they are told they are an illusion. Creatures have disadvantage if the environment can is similar to a desert, such as sandy terrain or great heat",
+				"Creatures Immunes to Exhaustion or native to deserts are immune to this spell."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "An Arrow Fletched with the feathers of a desert bird, wich the spells consumes"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If this spell is cast  with a 3rd lvl slot or higher the radious of the spell increases by 5 ft and the dmg increases by {@dice 1d6} psychic"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			]
+		},
+		{
+			"name": "Bestow minor Curse",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"(Cleric, Warlock, Wizard)",
+				"Frequency Uncommon",
+				"_____",
+				"You touch a single creature and try to afflic them with a curse. The Creature must make a Wisdom save or be afflicted. After 1 minute has passed the creature may atempt to save again. on a Success the spell ends, on a fail the caster no longer needs to concentrate on the spell. The target then must save again at midnight or the spell becomes permanent until removed on a fail.",
+				"List of Minor Curses posted separetly"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Bestow Major Curse",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"(Cleric, Warlock, Wizard)",
+				"Frequency Uncommon",
+				"_____",
+				"You touch a creature and bestow a major curse to the target.",
+				"The Target must make a Wisdom save, on a Failure they are aflicted with a Major curse.",
+				"This curses can only be Removed with a 7th lvl spell that removes curses .",
+				"Some Curses may only be removed with a restoration at lvl or wish.",
+				"The Curse may end and be reversed by conditions set by the caster if any"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A personal or Private item of the target"
+			}
+		},
+		{
+			"name": "Magnum Opus",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"(Sorcerer,  Warlock,  Wizard)",
+				" Frequency Legendary , this spell can be obtained on lvl up, pellbook or with the DM's magic creation rules for a 9th lvl spell, no mage would willinggly sell their secrets of Magnum Opus",
+				"______",
+				"You Create the Greatest illusion, tricking reality itself, and transmute it into truth. ",
+				"When you cast this spell , choose one of the following effects",
+				"- Philosopher's Stone: You take 7 days casting this spell and You Create a stone with the Powers of this spell, you can create a singular stone at the time, the previous one disintegrating and becoming inert when you cast this spell again. A creature can use their action to cast Magnum Opus, using any option exept this one",
+				"- When you cast this spell . You duplicate any other spell of 8th level or lower. You don't need to meet any requirements in that spell, including costly components. The spell simply takes effect.",
+				"- You take 1 hour and You create an object or set of objects of up to 50,000 gp in value that arent magic item. The objects must fit in a  300 feet cube, and it appears in an unoccupied space you can see on the ground.  If the Object is extremely detailed you must know the proficiency to make it.",
+				"- You take 24 hours and You can Create an  structure  or set of structures that fits with in 500ft cube , such as a castle, or village this is not equiped or furnished",
+				"- When you cast this spell You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the greater restoration spell.",
+				"- You cast this spell for 10 minutes and You grant up to ten creatures that you can see resistance to a damage type you choose. ",
+				"- you cast for 1 hour and You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a lich's life drain attack.",
+				"- You cast this spell for 8 hours and You can alter a  region with a real version of the Mirage Arcane Effect, At the moment of creation the spell cant create anything harmful to anything in the are, however it can be harmful. Such as you may create a lake of lava, but the spell fails if some one would be harmed when you cast the spell , other whise the lava is still lava.  ",
+				"- You may spend 7 days  creating the elixir of life, upon drinking it the creature is affected by Greater restoration, regains all their HP and Stop aging, you also may choose to revert the aging of any creature that drinks the elixir returning to any age you wish. The Elixir exists as a Magical item but becomes inert if you cast this spell again. A creature that drinks the elixir retains the benefits of the spell, canot age even magically, but is not immune to disease nor death by other means.",
+				"- True Permanency. You Make a spell up to 5th lvl with continual effect affecting a creature or area permanent until dispelled. A creature may only have up to 3 spells affecting them permanently by the magnum opus spell."
+			],
+			"source": "FenrisGrimoire",
+			"subschools": [
+				"and Illusion"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Esoteric Rites of the Forbidden Arcanum",
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"(Cleric, Warlock)",
+				"Frequency Legendary, EXTREMELY RARE THAT CLERICS HAVE IT",
+				"_________",
+				"With this Rite you call upon your patron's power for aid and by invocing all the power of your pact your patron acts at the best og its ability",
+				"- Rite of Conjuring: as an action An avatar of your patron apears with in 30ft of you in an unocupied space, the Creature is of a cr not higher than your lvl, you must talk it before with your dm to see what statblock the creature uses. this last 1 hour",
+				"- Rite of Embodiment. as an action You call upon the power of your pact allowing you to enbody aspects of your patron, you gain Resistance to Phycical dmg, 50 temp hp, Resitance to one of the following.  Cold, Fire, Poison, Necrotic, Lightning, Radiant or Psychic, and Immunity to one of the same, you become imune to being {@condition poisoned} and {@condition charmed} And gain a flying speed equals to your walking speed. You choose then Chain, Book or Sword. ",
+				"If you choose Chain your familiar becomes a creature of the same type with a cr equals half your lvl. ",
+				"If you choose sword, you gain 2 aditional atacks and gain temp hp equals to half your lvl each turn.",
+				"If you choose Book, your eldritch blast shoots 2 aditional blasts and you can concentrate on an aditional spell.",
+				"Embodiment lasts up to 1 hour.",
+				"- Rite of lending. You spend 10 mins making a ritual so your patron bestoys upon you magic items for a limited time. The ritual also costs the following, Common 5gp, Uncommon, 50gp, Rare, 500 gp, vrare 5000gp , legendary 10 000 gp, Half if is consumable. Upon finishing the ritual an item of your or the DMs choice that your patron has, apears before you for 1 hour. The duration is increased by 1hour up to 8 for every 1/10 of the cost is paid. You may request multiple items if you cna pay for them but must be of the same rarity.",
+				"- Rite of power. As an action you cast any spell of lvl 8 or lower taht is in your expanded spell list or the Warlock spell list.",
+				"-Rite of Torment. as an action Up to 6 creaturs with in 90ft of you become affected by the Hex spell, casted at lvl 5 , no {@status concentration} on your part. OR Alternatively 6 creatures with in 90ft must save against a Bestow curse spell casted at lvl 5, you must still hold {@status concentration}.",
+				"- Rite of Sanctuary. You and up to 20 willing creatues of your choice with in 60ft of you, are teleported to a sanctuary or safehouse your patron deems apropiate, the sanctuary has an exit that leads back to the material plane if is not in the material plane. While in this place you are protected from conjuration and divination spells not from your patron",
+				"- Rite of Eldritch Resurrection. You can only perform this rite only after death, your souls is aware and able to cast it, you call upon your master to give you life once more, if your master is able, you are resurrected. You resurrect in a similar maner to the Reincarnate spell, your form reflecting the nature of your patron, such a becoming a sahuagin or kuatoa if your patron is fathomless."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Up to the dm , what the patron demands"
+			}
+		},
+		{
+			"name": "Miracle",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Cleric)*",
+				"- **Frequency** Legendary",
+				"_________",
+				"You call upon your Deity to perform a great miracle. by the power of the miracle chosse one of the following effects",
+				"- Duplicate any Cleric spell up to lvl 8 or a spell that the dm would concider being in your Deity's domains reguardelss of yours",
+				"- Duplicate any spell up to lvl 7",
+				"- Undo a curse, spell or other spell or effect such as possessions",
+				"- Heal up to 8 creatures by 150hp, and end all curses and condition on them",
+				"- Cast revivify  in a 1 mile radious using a single material component, the creatures gain 20hp instead of 1 and all lethal wounds are healed",
+				"- you and  up to 10 creature Teleport to a location even trough  barriers with out error, you must know of the existance of the location",
+				"- Protect a city from a natural disaster, such as famines, earthquakes, floods or anything similar",
+				"THE DEITY WILL PERFORM ALL REQUEST DONE AS PER THEIR DOMAINS AND ALINGNMENT"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Avatar of Nature",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Druid)*",
+				"- **Frequency** Legendary",
+				"_________",
+				"You call upon primal and elemental forces to aid you, you become the avatar of their might and wrath.",
+				"While in this form you gain the following",
+				"-  Imunity to fire, cold and lightning",
+				"-  Resistance to all but Psychic, necrotic and radiant",
+				"-  your Base speed doubles, and gain equal fly(hover) and swiming speed",
+				"-  you gain a burrow speed of 30ft",
+				"-  You nolonger need air, and cant be {@condition charmed} or put to sleep",
+				"-  one size larger",
+				"-  you gain 50 temp hp and gain 10 temp hp at the start of your turn",
+				"-  YOu gain +2 to ac and an additional action, this action can be used for a singular atack or feature, but not spellcasting",
+				"-  As a Bonus Action when you hit a creature with an non-spell atack you can deal {@dice 2d8} Lightning, Cold, Thunder, Fire, Poison, Acid, Bludedgeoning, piercing or slashing dmg. You can use your reaction to add {@dice 1d10} of the same element to one nonspell atack you see with in 120ft",
+				"-  Land stride. You are under the effects of tree stride, and as a BA can teleport to any spot you can see with in 60ft that is non worked stone or metal. You cant be slowed by terrain or weather, including from druid spells such as plant growth",
+				"- Elemental Quagmire. as an action , You can place up to 4 areas of dificult terrain, Choosing Earth , Air, Fire , Water or Oak. this areas are 30ft of radius, whenever you use this feature you may change or move the type of each individual area, when they apear you may choose all be diferent or the same. Earth, the area is affected by the spike growth spell. Air The area is affected by the sleet storm effect, Fire acts as touching a wall of fire(dex save to jup out the area as it apears), Water creates a 30ft radius sphere of water under Control water's whirpool's effect and Oak Creates a 30ft area affected by  Plant growth's speed reduction and entangle restrain",
+				"Whenever you use this action you can choose any number of creatures to be immune to any speed reduction from this feature",
+				"-  Healing Spirits. As an action you may heal all creatures of your choice by {@dice 3d8}+wisdom with in a 300ft radious, This also ends the Paralyzed , Poisoned conditions and ends any mundane illness on those creatures"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
 		}
 	],
 	"monster": [
 		{
-			"uniqueId": "af4e36ad-3c18-4973-b4be-158e82ac3ef5",
 			"name": "Quasit",
 			"size": [
 				"T"
@@ -1629,7 +2081,6 @@
 			]
 		},
 		{
-			"uniqueId": "05b50fe0-2195-44ab-97a6-b6ef23449491",
 			"name": "Swarm of Quasits",
 			"size": [
 				"M"
