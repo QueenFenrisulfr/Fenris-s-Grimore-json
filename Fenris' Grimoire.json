@@ -1868,7 +1868,302 @@
 			}
 		},
 		{
-			"name": "Avatar of Nature",
+			"name": "Spellfire Phoenix",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"- **Frequency** Legendary",
+				"______",
+				"You concentrate into magic with in you and ignite it into a maelstrom of arcane might.",
+				"Your body is covered with an aura of silvery blue flames and your eyes emanate raw arcane power, you feel great exaltation as your magic burns, some may confuse this with madness. This state lasts until you supress it, go to 0hp or you remain incapasitated for 1 minute, this state cant be dispelled but it is supressed by antimagic fields",
+				"While in this state you gain the Following Benefits",
+				"Arcane sight: You have true sight of 60ft and see magic in that are",
+				"Arcane Flight: You have a fling speed of 60",
+				"Arcane Flames: When you cast a spells that deals damage you may change its damage to force",
+				"One with magic: While in this state you have advantage on {@status Concentration|XPHB} spells and you may use your hit dice or Sorcery points to fuel your spells instead of spell slots, using the  spell point formula in the DMG. You have adv against spells and other magical effects",
+				"Metamagic Mastery: When you cast a spell you may use your metamagic with out spending sorcery points and your spells are all Heightened",
+				"Spellfire: you gain access to spellfire. As an action you may spend 2 sorcery points to do one of the folowing effects",
+				"- Spellfire Blast: You make a ranged spell atack vs a target with in 120ft, the target then takes {@dice 8d10} Force dmg.",
+				"- Spellfire Ball : YOu create an explotion of spell fire with in 120ft with a 20ft radius. all creatures in the area must make a Dex save or take {@dice 5d10} Force dmg or half as much on a success ",
+				"- SpellFire Burst: You Emanate a blast of of spell fire centered on yourself, all creatures with in 10 fot of you must make an Str save or take {@dice 5d10} force dmg and be pushed 30ft away from you, half as much on a save and are not pushed",
+				"SpellFire Restoration: You may use your bonus action to heal a creature other than you with in 60ft, you spend any amount of hit die, and the creature recovers that amout of hp",
+				"As an action YOu may end this spell by focusing on yourself and calming your magic, the spell ends if you are reduced to 0 hp or are {@condition incapacitated} for 1 minute.  When this spell ends you gain 3 points of {@condition exhaustion} and must make a Con save vs your own dc, on a fail you gain 2 {@condition exhaustion} for every minute  the spell was active and all your spell slots are spent. On a success you receive no other drawback.",
+				"If you die by the {@condition exhaustion} gained by this spell, your body burns away into silvery flames and is destroyed"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"s": true
+			}
+		},
+		{
+			"name": "Curse of Bloodletting",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Frequency: Common",
+				"_____",
+				"You curse a creature thin blood and their wounds to bleed profusely . The Target must make constitution save or be cursed, the spell ends on a successful save. ",
+				"Whenever the cursed creature takes Slashing, Piercing , Bludgeoning or Necrotic dmg they take an additional {@dice 1d4} necrotic dmg. At the end of each of their turns the creature makes a con save, on a success the spell ends"
+			],
+			"source": "FenrisGrimoire",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A strawdoll wich the spell consumes and a small knife or dagger"
+			}
+		},
+		{
+			"name": "Abjure",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "or Action ,the reaction  you take when you see a creature casting a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Frequency: Common",
+				"______",
+				"You protect a creature you can see with in range from a singular spell for the duration. Until the start of your next turn the target is immune to all effects and damage from the next spell that would affect them, once a spell is negated Abjure ends. "
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"s": true,
+				"m": "A 200gp+ silver wrapped wand made of tiger bone with a tiger eye gem at the point"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You can target an additional creature  for each spell slot above 3rd lvl you use to cast this spell"
+					]
+				}
+			]
+		},
+		{
+			"name": "Fusion Bolt",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"- **Frequency** V.Rare (Common for Evokers)",
+				"______",
+				"You gather magic combining two spells. As a Bonus action after casting this spell, you may Combine 2 spell of lvl 2 or lower, including cantrips, that have the following properties",
+				"-  Ranged spell attack ",
+				"-  Damage type, both spells must be diferent damage types",
+				"When you cast this two spells you have to spend a number of spell slots that equal their combined spell lvl or the lvl you are casting the spells, to a minimun of 1, with  cantrips costing 1 each.",
+				"The effects and dmg of both spells are combined, if one of the spells targets multipe targets the damage of the second is spread among targets equaly, Example Scorching Ray+ Ray of frost, All hits reduce speed and deal {@dice 2d6} fire dmg, and the {@dice 2d8} from ray of frost is divided by the number of targets of the Scorching ray"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each slot above 3rd used to cast this spell, allows you to cast 2 spells of 1 lvl higher. 4th lvl allows to cast 3rd lvl spells and so on"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ghost Pipes",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"*(Common)*",
+				"__________",
+				"You hum a Tune and touch a non magical Musical  instrument to animate. The Instrument is  then Animated and starts playing the tune on its own as long you know it to completion.  The instrument Plays it at the base standard ability.",
+				"If you are proficent on Performance or the instrument , you are allowed a roll with either to determine if the instrument play it better than the base standard.",
+				"If a creature moves the instrument, even slightly, the spell ends."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You can animate 2 aditional instruments for each lvl above the second used to cast this spell"
+					]
+				}
+			]
+		},
+		{
+			"name": "Avatar of nature",
 			"level": 9,
 			"school": "T",
 			"time": [
@@ -1888,7 +2183,167 @@
 					"type": "timed",
 					"duration": {
 						"type": "hour",
-						"amount": 1
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"- **Frequency** Legendary",
+				"_________",
+				"You call upon primal and elemental forces to aid you, you become the avatar of their might and wrath.",
+				"While in this form you gain the following",
+				"- Imunity to fire, cold and lightning",
+				"- Resistance to all but Psychic, necrotic and radiant",
+				"- your Base speed doubles, and gain equal fly(hover) and swiming speed",
+				"- you gain a burrow speed of 30ft",
+				"- You nolonger need air, and cant be {@condition charmed} or put to sleep",
+				"- one size larger",
+				"- you gain 50 temp hp and gain 10 temp hp at the start of your turn",
+				"- YOu gain +2 to ac and an additional action, this action can be used for a singular atack or feature, but not spellcasting",
+				"- as a BA when you hit a creature with an non-spell atack you can deal {@dice 2d8} Lightning, Cold, Thunder, Fire, Poison, Acid, Bludedgeoning, piercing or slashing dmg. You can use your reaction to add {@dice 1d10} of the same element to one nonspell atack you see with in 120ft",
+				"- Land stride. You are under the effects of tree stride, and as a BA can teleport to any spot you can see with in 60ft that is non worked stone or metal. You cant be slowed by terrain or weather, including from druid spells such as plant growth",
+				"- Elemental Quagmire. as an action , You can place up to 4 areas of dificult terrain, Choosing Earth , Air, Fire , Water or Oak. this areas are 30ft of radius, whenever you use this feature you may change or move the type of each individual area, when they apear you may choose all be diferent or the same. Earth, the area is affected by the spike growth spell. Air The area is affected by the sleet storm effect, Fire acts as touching a wall of fire(dex save to jup out the area as it apears), Water creates a 30ft radius sphere of water under Control water's whirpool's effect and Oak Creates a 30ft area affected by  Plant growth's speed reduction and entangle restrain",
+				"Whenever you use this action you can choose any number of creatures to be immune to any speed reduction from this feature",
+				"- Healing Spirits. As an action you may heal all creatures of your choice by {@dice 3d8}+wisdom with in a 300ft radious, This also ends the {@condition Paralyzed|XPHB} , {@condition Poisoned|XPHB} conditions and ends any mundane illness on those creatures"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Seyren's River of Stars",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"- **Frequency** Legendary Spell, only thought by the wizard of dreams",
+				"______",
+				"You Create a field of stars that resembles the night sky with a 120ft radius from a point you can see with in range.",
+				"All creatures you choose in the are take {@dice 30d4 + 30} Force dmg as the stars streak at them like shooting stars or magic missiles.  A  Creature that casts shield with a lvl 5 slot, is encased in a force construct sich as a wall of force or a fully closed forcecage, or are affected by the platinum shield take no dmg."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A Star Plucked from the tapestry of Night"
+			}
+		},
+		{
+			"name": "Chariot of Sustarre",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"- **Frequency** Legendary",
+				"______",
+				"You conjure a a Charriot of flames pulled by 2 flaming horses, the Chariot is large enough to fit you and a passenger of your size. ",
+				"All creatures but you and the passenger that start 5ft of the chariot take {@dice 1d10} fire dmg",
+				"The Chariot follows all verbal comands with no action required.",
+				"The CHariot has a flying speed of 120ft and a land speed of 60.",
+				"The charriot provides half cover against ranged atacks.",
+				"The charriot has an Ac of 20, 200hp and can only be harmed by cold and magical weapons ,For every 10 feet the chariot moves in water, or for every 5 gallon of water splashed on it, it takes 1 cold damage"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a wicker figurine of a charriot that is set in fire"
+			}
+		},
+		{
+			"name": "Shade",
+			"level": 6,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
 					},
 					"concentration": true
 				}
@@ -1898,28 +2353,95 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Shadow",
+							"shortName": "Shadow ",
+							"source": "XGE"
+						}
 					}
 				]
 			},
 			"entries": [
-				"*(Druid)*",
+				"- **Frequency** Uncommon",
+				"______",
+				"You create a 10ft radious of dim light arround you , from it  6 Shadows are summoned in it. the Shadows follow your commands and take the turn after yours and uses your DC.",
+				"The shadowsa are as per the monster manual with the following diferences",
+				"- They are Illusion",
+				"- Have half their hp",
+				"- Dont have light sensitivity",
+				"- their str drain is changed in the following wat",
+				"Strength Drain. Creature must make an int save or take {@damage 2d6 + 2} Psychic damage, and the target's Strength score is reduced by {@dice 1d4}. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest or is Restored."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You conjure 2 aditional shadows for each lvl after 6th"
+					]
+				}
+			]
+		},
+		{
+			"name": "Warband Quest",
+			"level": 9,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
 				"- **Frequency** Legendary",
-				"_________",
-				"You call upon primal and elemental forces to aid you, you become the avatar of their might and wrath.",
-				"While in this form you gain the following",
-				"-  Imunity to fire, cold and lightning",
-				"-  Resistance to all but Psychic, necrotic and radiant",
-				"-  your Base speed doubles, and gain equal fly(hover) and swiming speed",
-				"-  you gain a burrow speed of 30ft",
-				"-  You nolonger need air, and cant be {@condition charmed} or put to sleep",
-				"-  one size larger",
-				"-  you gain 50 temp hp and gain 10 temp hp at the start of your turn",
-				"-  YOu gain +2 to ac and an additional action, this action can be used for a singular atack or feature, but not spellcasting",
-				"-  As a Bonus Action when you hit a creature with an non-spell atack you can deal {@dice 2d8} Lightning, Cold, Thunder, Fire, Poison, Acid, Bludedgeoning, piercing or slashing dmg. You can use your reaction to add {@dice 1d10} of the same element to one nonspell atack you see with in 120ft",
-				"-  Land stride. You are under the effects of tree stride, and as a BA can teleport to any spot you can see with in 60ft that is non worked stone or metal. You cant be slowed by terrain or weather, including from druid spells such as plant growth",
-				"- Elemental Quagmire. as an action , You can place up to 4 areas of dificult terrain, Choosing Earth , Air, Fire , Water or Oak. this areas are 30ft of radius, whenever you use this feature you may change or move the type of each individual area, when they apear you may choose all be diferent or the same. Earth, the area is affected by the spike growth spell. Air The area is affected by the sleet storm effect, Fire acts as touching a wall of fire(dex save to jup out the area as it apears), Water creates a 30ft radius sphere of water under Control water's whirpool's effect and Oak Creates a 30ft area affected by  Plant growth's speed reduction and entangle restrain",
-				"Whenever you use this action you can choose any number of creatures to be immune to any speed reduction from this feature",
-				"-  Healing Spirits. As an action you may heal all creatures of your choice by {@dice 3d8}+wisdom with in a 300ft radious, This also ends the Paralyzed , Poisoned conditions and ends any mundane illness on those creatures"
+				"______",
+				"With this spell you target up to 200 creatures making them swear a binding oath to compleate a quest or campaing as an army. the objective of the Quest must be clear and specific (EG Cant be conquer this kingdom. But may be \"Rout this army, Release or conquer this castle or castles, defeat this general in battle\")",
+				"Unwilling creatures must make a wisdom save.",
+				"YOu decide the punishment for abandoning the quest, the punishment must be either done all at the same time in the form of a spell from your spell list that cant fail and works to its maximun effect, or gradual",
+				"This spell can only be removed with a Remove curse casted at lvl 9 or similar spell casted with a 9thy lvl slot",
+				"Creatures that are questing recieve the following bonuses",
+				"- Magic weapons , non magic weapons get a +2",
+				"- +20max hp",
+				"- +2AC",
+				"- Cant be {@condition Frightened|XPHB} and have resistance to {@condition poisoned} and {@condition charmed} conditions",
+				"- Have adv on initiative and Dex saves"
 			],
 			"source": "FenrisGrimoire",
 			"components": {
