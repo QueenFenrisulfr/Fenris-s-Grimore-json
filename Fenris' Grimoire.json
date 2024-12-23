@@ -3438,9 +3438,9 @@
 				]
 			},
 			"entries": [
-				"You call forth wild spirits and fey, a small part of a wild hunt in a 6ft cone.",
+				"You call forth wild spirits and fey, a small part of a wild hunt in a 60ft cone.",
 				"All creatures in the area must make a Dexterety save  or take dmg and effect depending on the spirits called forth, only half on a success.",
-				"You manifest one of the following wild Hunts of your choice",
+				"You manifest one of the following wild Hunts of your choice, a creature killed by the Hunt is taken by it",
 				"Seelie. On a Fail Dex save the target takes {@dice 6d6} Radiant and {@dice 6d6} psychic and be {@condition charmed}. While {@condition charmed} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Seelie fey take them and they are banished, if the target saves 3 times or the charm ends the seelie dont take them. On a Success of the dex the Creature only takes half dmg.",
 				"Unseelie(Youkai). On a Fail Dex save the target takes {@dice 6d6} Cold and {@dice 6d6} psychic and is {@condition Frightened|XPHB}.  While {@condition Frightened|XPHB} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Unseelie fey take them and they are banished, if the target saves 3 times or the {@condition Frightened|XPHB} ends the unseelie dont take them. On a Success of the dex the Creature only takes half dmg."
 			],
