@@ -2448,6 +2448,1011 @@
 				"v": true,
 				"s": true
 			}
+		},
+		{
+			"name": "Detect Metals and Minerals",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"entries": [
+				"Frequency: Common",
+				"________",
+				"When you cast this spell , you learn the location, distance and aproximate amount of the closest {@status Concentration|XPHB} of Mineral or metal that is the same as the one  you used to cast this spell. The spell detects only the closest {@status Concentration|XPHB} of the material and does not reveal any other concentrations beyond that one."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A piece of metal or Mineral of atleast 1 inch cube in size"
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Analyze Device",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"entries": [
+				"- **Frequency:** Uncommon",
+				"__________________________________",
+				"You touch an item, object or device with in range. ",
+				"You learn all mundane and mechanical  intended uses and functions of the object, however you dont learn how is used."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Enchant Item",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 30,
+						"upTo": true
+					}
+				},
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel",
+						"discharge"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You enchant an item of high quality with a number of spells of total lvl 5 or lower.",
+				"You spend 2 workdays (8hours per day) +{@dice 8d8} hours enchanting the item, during this time you cant stop or cast other spells or the spell, the materials and items are lost . ",
+				"You then enchant the item with desired spells, you must do a dc (10+ total lvl of spells) inteligence chek, if you fail, the item is destroyed. ",
+				"On a sucess the item is enchanted with the selected spells, ALL spells work as described in their text. You choose either one of the folowing",
+				"- Charge: The item stores the spells to be used later with a Magic action (similar to a ring of spell storing)",
+				"- Constant: The spell affects the enchanted item constantly and is always active, and all who wield or wear the item are affected as soon as they wield or wear it. Spell with a duration other than instant last until Enchant Item ends.",
+				"- Trigger: You set a trigger for the item, such a word, this activates the spell, and if it has a duration it dactivates it too. if it has a duration other than instant the duration is reduced by the time used. Spells activated via trigger are centered on the item.",
+				"The spells are lost upon the end of Enchant Item. When the Spell ends or all spells are spent the item has a 5% or be destroyed.",
+				"If you cast permanency with an 8th level slot on an item Enchanted with this spell it turns the Enchantmet permanent until dispelled or discharged"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "The item you are enchanting, wich must be of the highest quality, costing atleast 500gp above normal , the DM may reduce the price AND 100gp worth of enchanting materials, such as inks and powders, wich the sell consumes"
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Casting this spell with a lot of 7th lvl or higher increases the total lvl of spell you can enchant into an itme by 1"
+					]
+				}
+			]
+		},
+		{
+			"name": "Reconstruction",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You reconstruct and repair an object that fits 40ft cube for the duration, this object can be anything from coin reduced to gold dust , a house or even just a chunk of wall. Atleast 80% of the original object must be with in 20ft of the object and not being part of a new object. ",
+				"The object can be repaierd from any state it is, except if has been destroyed by the disintegrate spell, how ever anything that was not part of the original's inate state that was lost on destruction it cant be recoveres, for example a letter that  has been shredded will be repaired in full, with exeption of missing pieces of the paper wich will apear blank, otherwhise the reconstructed letter will contain all writen content in it , How ever if the letter has been burnt, it will be recostructed as a blank letter",
+				"The spell reconstructs items to best state, for example a rusted sword or even one that has been reduced to iron dust and a handle , will be restored to a sharp sword of standard quality.",
+				"At the end of the spell the object colapses into the state it was recosntructed from. The spell ends if dispelled or the object is destroyed"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"r": true,
+				"m": "A pinch of sand and a drop of sap"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Casting this spell at higher lvls increases the time the reconstruction remains. At 7th lvl it remains for 24 hours, at 8th lvl  up to 30 days and at 9th lvl up to 1 year"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell Engine",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create an {@condition invisible} and inmovile disk of magical force in any position you wish centered in a point with in range, the Disk is 10ft in diameter and 2ft, the disk is intangible for living creatures but objects can interacct with the disk.",
+				"Any spell or magical effect that is casted with in 10ft of the disk (20ft starting at the center of the disk), is absorbed harmlessly by the disk, this has no effect on spells or magical effects that are already in place or active only those that are cast or activated with in the area. ",
+				"Aslong the Disk has absorbed 1 spell it lights up , shading 15ft of bright light and an aditional 15ft of dim light, and starts spining, spining faster the more spell has absorbed. The disk remains active for 1 hour per spell lvl absorbed",
+				"The disk can absorb any number of spell, but its max speed is arround the top speed of a waterwill or windmill, not much faster than that.",
+				"Any Spell caster that remains under the light of the spell may prepare or change prepared spells with in 1 hour, as long as the new spells are of the same lvl as the ones that they changed. Aditionaly any creature that rest under the light of a spell engine, recharges all their spell slot in half the time , this doesnt half the amount of time needed to rest for other features.",
+				"The Spell Engine may be interacted and placed as part of a mechanism, as it will behave as the desire sopurce of power, such as a windmill or steam engine.",
+				"If a magic item or the disintegrate spell makes contact with the Spell Engine the spell unravels in a 30ft radious blast of force that deals {@dice 1d6} per spell lvl with in the Disk to a total of {@dice 25d6} force dmg",
+				"Same happens if the engine ever enters a zone of antimagic"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small disk of polished marble and a 1000+gp gem, both consimed by the spell"
+			}
+		},
+		{
+			"name": "Mechanical Disruption",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"entries": [
+				"You target one or more NON-magical mechanical components or objects with in a 20ft cube, you may affect one component of a larger object instead of the whole,  aslong the component is with in the cube.",
+				"As long the spell last the affected mechanical objects or components cease to fuinction and remain inmobiles, such as hinges not openong, levers not moving and  trebuchets not launching.",
+				"The affected objects must have certian mechanical complexity, the spell wont affect a sword or a bow, but will stop a folding knife from opening or a crossbow from latching or loosing."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Duplicate",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch an object that fits with in a 20ft cube, then you conjure duplicate the item in a place with in range, the duplicate has all non magical functions of the duplicated object, however it does not inherit any specialy properties or magical effects. For example a silvered weapon will seem silvered to any observation, exept magical, but wont overcome reistances such as a lycanthrope's.",
+				"The Duplicate looks as the original and only a investigation(inteligence) check vs your dc can reveal is a copy, detect magic would reveal is magical and grant adv on the roll unless the magical nature is disguised.",
+				"After 1hour the Duplicate fades away"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"s": true,
+				"m": "pinch of coal dust"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The duplicates last longer for each slot above 4th used to cast the spell. At 5th lvl the duplicate lasts 6 hours, At 6th lvl it lasts for 12, at 7th it last 24 hours, at 8th lvl 1week and at 9th lvl up to 1 month"
+					]
+				}
+			]
+		},
+		{
+			"name": "Prayer",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You Recite a prayer to bolster your allies and hinder your foes.",
+				"You and up to 3 allies with in range are blessed ,Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds {@dice 1d4} to the attack roll or save.",
+				"Additionaly Up to three creatures of your choice that you can see within range must each make a Charisma saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract {@dice 1d4} from the attack roll or save."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A Holy Symbol made of silver that is worth atleast 50gp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You can target two additional creatures to bless and two aditional creatures to bane for each spell slot level above 3."
+					]
+				}
+			]
+		},
+		{
+			"name": "Negative Plane Protection",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You imbue a creature with in range with positive energy, providing protection against negative enrgy. ",
+				"The Creature has resistance to necrotic damage. ",
+				"Additionaly the creature is protected from one instance of a drain effect that would reduce their ability scores, max hp or a condition  that inflicts a negative bonus, such as bane Such a vampire bite or lif drain. If the creature would be affected, either directly or failing a save, instead the effect is negated and the casue, if is a creature, takes {@dice 2d12} radiant dmg. This spell prevent only a singular instance of such ability, aditional instances are resolved as normal."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You can target one additional creature for each spell slot level above 3rd"
+					]
+				}
+			]
+		},
+		{
+			"name": "Chromatic Blade",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You hold the material component and a blade of elemental energy is created from it, choosing one of the following damage types: acid, cold, fire, lightning, poison, or thunder. If you let go of the blade it disappears but you may use your bonus action to recall it to your hand, appearing immediately.",
+				"The blade  sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.",
+				"Whenever you would make a melee attack, you can make a melee spell attack with the elemental blade against a target within your reach. On hit, it takes elemental damage of the chosen type equal to {@dice 2d8} + your spellcasting modifier.",
+				"When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra {@damage 4d6} Elemental damage, rolled after the critical dmg. Then roll another {@dice d20}. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead.",
+				"Whenever the wielder is Target of a Chromatic Orb, Color Spray, Prismatic Spray . they may use a reaction to impose disadvantage on the attack roll or gain adv against the spell, taking no dmg on a successful save. The Chromatic blade spell destroys one layer of a prismatic wall, half of all on a nat 20"
+			],
+			"source": "FenrisGrimoire",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The damage increases by {@dice 1d8} for each spell slot level above 3rd"
+					]
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small lightning struck Dagger set with 7 gems of different colors with a worth of atleast 500gp"
+			}
+		},
+		{
+			"name": "Rainbow Pattern",
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "yards",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a twisting pattern of colors in a 30-foot Cube within range that entrances anyone with in it. The pattern appears and remains for the duration.",
+				"Each creature in the area who can see the pattern when apears, enter the area for the first time on a turn or start their turn there must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition for the duration. While {@condition Charmed|XPHB}, the creature has the {@condition Incapacitated|XPHB} condition and follows the patern and atempts to remain inside it, creatures that end their turn outside the pattern may atempt another save, ending the spell themselves on a success .",
+				"As an action you may move the pater up to 30ft on any direction, all creatures {@condition charmed} by this spell must follow it at the best of their ability",
+				"The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor. "
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"s": true,
+				"m": "A cystal Prism  and a pinch of phosphor"
+			},
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Hypnotism",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You entrance up to 6 creatures with in range, the targets must succeed a Wisdom save or be affected, cretures immune to charm are imune to this spell.",
+				"While affected and remaining with in range they treat your sugestions as if they are 1 stage friendlies, Hostile creatures treat your suggestions as if they were neutral, Neutral as if friendly and you gain adv vs friendly creatures.",
+				"Note that the spell does not make you suggestions magical, nor can mind control others, simply makes them more agreable to your suggestions",
+				"The spell ends the moment they exit the area or are harmed, but they do not know they have been influenced"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"s": true,
+				"m": "A glowing stick of incense"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Casted at 9th lvl allows you to influence any number of creatures with in 90ft"
+					]
+				}
+			]
+		},
+		{
+			"name": "Forget",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You choose a creature with in range, the creature must make a wisdom save or forget all that has happened for the last 1 minute. ",
+				"A greater restoration or similar recovers the memories.",
+				"Charms, Suggestions, Geas or similar spells still affect the creature, even if forgotten they work as normal, the target simply forgets who inffluenced them not the orders."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The amount of time increases by 1 minute for each slot above 2nd"
+					]
+				}
+			]
+		},
+		{
+			"name": "Snapping Teeth",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a creature or object and cause to one orifice to fill with ravenous fangs or to grow one new fanged filled mouth.",
+				"A creature affected with this spell may use a Bonus action to make 1 melee atack with them, using their str modifire. ",
+				"While an object can be ordered to atack anythat touches or enters it , such as a sword sudenly biting the hand of a wielder or a door bitting some one that crosses it. An object makes a SPell melee atack using your modifire and repeates the atack once per turn on your initiative",
+				"The teeth deal {@dice 2d8}+your spellcasting mod dmg"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small pouch of carnivore's teeth"
+			}
+		},
+		{
+			"name": "Mind Fog",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a 20ft cube of sweet smelling mist, all creatures with in the area have disadvantage agaisnt the {@condition charmed} condition, Suggention spells and Illusion spells.",
+				"The Fog lingers in the air for the duration or until a strong wind (such as the one created by Gust of Wind) disperses it, wich ends the spell."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If casted at 9th lvl it lingers permanently in the spot or until dispelled or dispersed."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dragon Scale",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a creature with in range, their skin becomes scaly and they gain +3 ac while they are not wearing armor, and resistance to the same element to the material component's dragon time.",
+				"A creature may only be affected by one instance of this spell at the time"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A Dragon scale"
+			}
+		},
+		{
+			"name": "Manifest Wild Hunt",
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call forth wild spirits and fey, a small part of a wild hunt in a 6ft cone.",
+				"All creatures in the area must make a Dexterety save  or take dmg and effect depending on the spirits called forth, only half on a success.",
+				"You manifest one of the following wild Hunts of your choice",
+				"Seelie. On a Fail Dex save the target takes {@dice 6d6} Radiant and {@dice 6d6} psychic and be {@condition charmed}. While {@condition charmed} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Seelie fey take them and they are banished, if the target saves 3 times or the charm ends the seelie dont take them. On a Success of the dex the Creature only takes half dmg.",
+				"Unseelie(Youkai). On a Fail Dex save the target takes {@dice 6d6} Cold and {@dice 6d6} psychic and is {@condition Frightened|XPHB}.  While {@condition Frightened|XPHB} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Unseelie fey take them and they are banished, if the target saves 3 times or the {@condition Frightened|XPHB} ends the unseelie dont take them. On a Success of the dex the Creature only takes half dmg."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A wand made of material from the Shadowfell or Feywild, like stone, Bone, or Wood"
+			},
+			"conditionInflict": [
+				"frightened"
+			]
 		}
 	],
 	"monster": [
