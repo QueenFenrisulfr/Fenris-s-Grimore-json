@@ -3440,9 +3440,10 @@
 			"entries": [
 				"You call forth wild spirits and fey, a small part of a wild hunt in a 60ft cone.",
 				"All creatures in the area must make a Dexterety save  or take dmg and effect depending on the spirits called forth, only half on a success.",
-				"You manifest one of the following wild Hunts of your choice, a creature killed by the Hunt is taken by it",
-				"Seelie. On a Fail Dex save the target takes {@dice 6d6} Radiant and {@dice 6d6} psychic and be {@condition charmed}. While {@condition charmed} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Seelie fey take them and they are banished, if the target saves 3 times or the charm ends the seelie dont take them,, when a creature takes dmg they can make a save agaisnt the charm. On a Success of the dex the Creature only takes half dmg.",
-				"Unseelie(Youkai). On a Fail Dex save the target takes {@dice 6d6} Cold and {@dice 6d6} psychic and is {@condition Frightened|XPHB}.  While {@condition Frightened|XPHB} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Unseelie fey take them and they are banished, if the target saves 3 times or the {@condition Frightened|XPHB} ends the unseelie dont take them. On a Success of the dex the Creature only takes half dmg."
+				"You manifest one of the following wild Hunts of your choice",
+				"Seelie. On a Fail Dex save the target takes {@dice 6d6} Radiant and {@dice 6d6} psychic and be {@condition charmed}. While {@condition charmed} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Seelie fey take them and they are banished, if the target saves 3 times or the charm ends the seelie dont take them,when a creature takes dmg they can make a save agaisnt the charm. On a Success of the dex the Creature only takes half dmg.",
+				"Unseelie(Youkai). On a Fail Dex save the target takes {@dice 6d6} Cold and {@dice 6d6} psychic and is {@condition Frightened|XPHB}.  While {@condition Frightened|XPHB} this way the target must make a wisdom save at the end of each of their turns, upon failing 3 times the Unseelie fey take them and they are banished, if the target saves 3 times or the {@condition Frightened|XPHB} ends the unseelie dont take them. On a Success of the dex the Creature only takes half dmg.",
+				"A creature killed by this spell is taken by the hunt"
 			],
 			"source": "FenrisGrimoire",
 			"components": {
@@ -3452,6 +3453,643 @@
 			},
 			"conditionInflict": [
 				"frightened"
+			]
+		},
+		{
+			"name": "Hypnotic Suggestion",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				},
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You entrance a creature making them belive all maner of things , altering personality traits, ideals, flaws or even make the creature belive themselves to be another type of creature or is unable to perform an action. The Implanmted suggestion must be achiebable and  and not involve anything that would obviously deal damage to any of the targets or their allies.",
+				"The Target must make a Wisdom Saving Throw, on a failure you can do one of the following, The suggestion instant or can be set on a trigger . Creatures immune to the {@condition charmed} condition are immune to this spell",
+				"- Alter Personality: You can change the creature's personality by adding or Replacing Traits and Flaws",
+				"- Added Behaviour: You can add an involuntary or triggered behaviour to a creature. Can be a simple as a \"You always repeat the sentence when you lie\" or \"Whenever you hear \"down\" you will sit\" , the complexity of this is limited to direct behaviours",
+				"- Self Perception: You can make the creature belives themselves to be polymorphed and act acordingly to their new form or make them belief that they are out of abilities and resources, this spell cant remove proficiencies but can give disadvantage if the creature belives that they are no longer proficient. This option can make a wizard think they are out of Slots, a Great fighter that he has become a little girl and act as such",
+				"- Memory: You can implant or modify memories of a target, even made them forget, this memories are still there, the target simply belives are not and can be found with things like Detect Thoughs or despelling this spell.",
+				"If the target is subject to the same hypnotic suggestions seven times before the spell ends , the suggestion becomes permanent until  dispelled with a greater restoration spell"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small pendulum"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"For each sloth above 6th you can add one aditional suggestion to the target And lasts 24 additional hours."
+					]
+				}
+			]
+		},
+		{
+			"name": "Selfless Love",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You target up to two creatures you can see with in range, both must be with in 30ft of each other. You can be one of the targets",
+				"Both creatures must make a Wisdom save . A creature that fails is {@condition Charmed|XPHB} by the other,  a creature has adv if was  hostile to the other.",
+				"While {@condition charmed} this way a creature they fall in love with other, a deep , unconditional and selfsacrificing love. When you cast the spell you decide if is Platonic or Romantic"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The duration of the spell increases with each slot above 4th, 8 hours at 5th lvl, 24 at 6th lvl, 30days at 7th level, 1 year at 8thlvl, permanent until  dispelled at 9th"
+					]
+				}
+			]
+		},
+		{
+			"name": "Amanuensis",
+			"source": "FenrisGrimoire",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "blank paper and atleast 1gp of ink"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You choose any nonmagical writing you can see within range and it is magically copied onto blank paper or parchment with in Touch range.",
+				"This spell copies one page side per minute at an avarage of 250words per minute and creates a perfect duplicate of the original. It does not translate the text or make it clearer. ",
+				"Magical writings (such as the text of a spellbook, a spell scroll, or a glyph of warding) are not copied at all by this spell. If the original text contains both normal writing and magical writing, only the normal text is copied. ",
+				"You must provide blank paper in some form for the spell to copy the text onto. If a blank sheet is filled with copied text, you must cast the spell again with a new blank sheet of paper to continue copying more text."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Mordenkainen's Penultimate Cogitation",
+			"level": 7,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell you choose up to 7 levels worth of spells from your spell book , then you may exchange the same amount of prepared spells for the new spells. If your spellbook is outside range the spell fails."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"At  8th lvl you may trade up to 12 lvls worth of spells and the range is 500miles. At 9th lvl you may exchange all prepared spells aslong your spellbook is in the same plane as you"
+					]
+				}
+			]
+		},
+		{
+			"name": "Perdivagrant",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"To Cast this spell you and your companions must be completly lost.",
+				"You and your companions name an outdoor location that non of you have ever visited, such as a landmark or Settlement. The location must be in the same plane. ",
+				"Then you guide your companions into a 24 mile treck among eerie and potentialy dangerous enviorments that changes every 6 miles, upon compleating the trek you arrive at the destination.",
+				"{@dice d12} locations, they dont repeat",
+				"1. Moonlit path through pine barrens. Distant howls.",
+				"2. Decaying walkways across wetland. The dark waters",
+				"sometimes stir.",
+				"3. Massive irregular concrete structures. Hollow wind.",
+				"4. Path cut through fields of grain and corn. Distant",
+				"machinery and crows.",
+				"5. Dirt path through dense leafless forest at night. Tree",
+				"bark resembles antler velvet.",
+				"6. Footpath through a sweltering jungle. Unidentifiable",
+				"animal cries. Too many insects.",
+				"7. Mountainous switchback path. Cold, biting wind.",
+				"8. Trenches through muddy battlefields. Eerily quiet.",
+				"9. Hiking trail through badlands. Thunderstorms.",
+				"10. Sun dappled path through a placid autumnal forest.",
+				"Suspicious lack of fauna.",
+				"11. Road through barren desert. Only horizon for miles.",
+				"12. Ornate yet overgrown palatial gardens. Light rain.",
+				"**Book of Gaub**"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A Dousing rod, Dousing Pendant or Broken compass"
+				}
+			},
+			"meta": {
+				"ritual": true
+			}
+		},
+		{
+			"name": "Assectation",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You fill a target with fearful determination. The  target must make a wisdom save of become {@condition frightened} of you. While {@condition frightened} this way it cant look at you and it must use their turn to move away from you, marching away trough the most efficient and safest path until they are 60ft away from you.",
+				"At the end of each of their turns they may atempt to save again ending the effect on a success"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Terminus",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a target and mark them with a permanent and {@condition invisible} mark, the mark can only be seen by detect magic or true sight.",
+				"At any point you may cast this spell, triggering on or more of the marks.If alive, The marked must make a wisdom save or be {@condition charmed}. While {@condition charmed} this way they know you location and  will come to you in the most direct and safest way, including teleportation, the {@condition charmed} condition ends when they arrive with in 5ft of you.",
+				"If the Marked target is dead, they are animated and move to you as if alive."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A rusted compass and a worn locket"
+			}
+		},
+		{
+			"name": "Famigerate",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Upon casting this spell you draw a sigil and a target's name on a piece of paper and throw it away. 24 hour later the piece of paper arrives to the target with your exact location writen on it.",
+				"Alternatively you can write an exact location on the piece of paper beforetrowing it away, 24 hours later the paper will arrive back to you with the most important rumor or event of the location writen on it"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"s": true,
+				"m": "atleast 1cp of paper and ink"
+			}
+		},
+		{
+			"name": "Roblet",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You mark an item or creature with an {@condition invisible} sigil, the sigil can be seen with Detect magic or Truesight.",
+				"When the target or creatures carring the item, leave an area designated by you, they must make a wisdom save. On a failure they become hopelessly lost, returning to the designated area with in 24hours, at wich point the spell becomes dormat until they leave it again"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Prepared ink worth atleast 1000gp wich the spell consumes",
+					"consume": true
+				}
+			}
+		},
+		{
+			"name": "Vectarius Curse",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You inscribe a sigil on the groud or a piece of paper. When your target or another creature you designate sees the sigil it must make a wisdom save or become cursed.",
+				"While cursed this way any mount they ride will take {@dice 4d6} psychic dmg each minute. While riding a vehicle the vehicle will get into an accident and be destroyed. No mater what the cursed target will always be safe and unharmed after the accidents or the death of the mount, by chance."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Occulcated Speech",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You burry your hands on the ground of a pathway, trail or road. Then you ask up to one question about those who have trodden upon it.",
+				"The more detailed the question the better the answer.  The road knows only what can be seen, heard and felt"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You can ask one additional question for each lvl above second used to cast the spell"
+					]
+				}
 			]
 		}
 	],
