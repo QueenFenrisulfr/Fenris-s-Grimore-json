@@ -4091,6 +4091,63 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Material",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You conjure unworked, basic and average quality materials into existence",
+				"You conjure a 5ft cube of such material. ",
+				"You can conjure any common materials, inorganic and non-living materials. Such as Earth, Soil, Water, Wood, Stone, air, wool or any that comes to mind.",
+				"The quality of the item is always, average or slightly bellow average.",
+				"The spell cant conjure living material, precious metals, rare substances, worked materials or items, rough gems or any of the such",
+				"You cannot conjure substances or materials you have never seen or interacted with"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When cast at 5th lvl or higher , you can conjure up to a 10ft cube. At 7th lvl up to a 15ft cube and at 9th lvl a 20ft cube"
+					]
+				}
+			]
 		}
 	],
 	"monster": [
@@ -4411,4 +4468,5 @@
 			]
 		}
 	]
+}
 }
