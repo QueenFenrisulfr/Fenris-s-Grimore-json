@@ -4148,6 +4148,835 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Delay Teleportation",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"The Targat of this spell gains an {@condition invisible} 25ft emanation that anticipates and delays the teleportation of any creature into the spell's area.",
+				"While he spell lasts, the target becomes aware of any creature using a teleportation or similar effects entering the emanation, the exact location where the teleporting creature will arrive with in the area, the creature's size, and how many other creatures (and their sizes) are arriving  this way. ",
+				"The spell also delays the arrival of the teleporting creature by 1 round (so that it arrives on its initiative count immediately before its next turn).",
+				"Since a teleporting creature doesn't necessarily arrive at the precise location it intends, the spell also functions against a creature that arrives in range even though its intended destination was elsewhere. For a creature that intends to teleport into range but inadvertently arrives outside the spell's area, the spell gives awareness that a creature has attempted to teleport into range and delays the creature as normal, but doesn't give any awareness as to the actual location of its imminent arrival.",
+				"The spell has no effect on creatures attempting to teleport away from the spell's area, Unless its destination is with in the emanation"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A tiny hourglass of platinum and crystal costing at least 500 gp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"Casting this spell using a slot of 4th lvl or higher  Increases the range of the emanation by 10ft for every slot above third used to cast it.",
+						"Casting this spell at 6th lvl or  higher  delays the teleportation by 3 rounds and tell you the creature types of the teleporting creatures"
+					]
+				}
+			]
+		},
+		{
+			"name": "Airsphere",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a sphere of breathable Atmosphere in a 20ft emanation. The sphere keeps away other atmospheres and dangerous elements from entering the emanation, however spells and abilities can enter the emanation, and any environmental effect that is produced inside the emanation may contaminate the atmosphere."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A small Crystal sphere which the spell consumes",
+					"consume": true
+				}
+			}
+		},
+		{
+			"name": "Flyfield",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You Touch an object up to 15 tons , imbuing it with this spell. Whenever you or a creature you designate is touching the object , you can trigger the spell.",
+				"Once triggered, the object lunges to a desired direction up to 300ft, the one that triggers the effect desides how far the object lunges.",
+				"If the one that triggers the effect stops contact with the object, the object only moves 50ft."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A par of Loadstones and a small crystal sphere , which the spell consumes",
+					"consume": true
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The max Weight increases by 5 tons and distance increase by 30ft for every slot level above 5th level used to cast the spell"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spiritwrack",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You target a Fiend or Celestial with in range whose name is written on the material component The Target must succeed a wisdom save with disadvantage Until the spell ends.",
+				"On a success the target is not affected but you may use your action to force the save again.",
+				"On a Failure The Target is then subject to the following effects, increasing each round the target is affected.",
+				"- 1st Round. The Target is wracked with pain until the spell ends, the target speed is reduced to 10 and cant increase.",
+				"- 2nd Round. The Target goes {@condition prone} with Pain.",
+				"- 3rd Round: The Target's Speed is Reduced to 0",
+				"- 4th Round: The Target becomes non-hostile, unable to muster any the will to fight and you gain adv on charisma saves against it",
+				"- 5th Round: The Target's Hp is reduced by Half of its current hp",
+				"- 6th Round: The Target is {@condition charmed} for 8 hours and begrudgingly follows your commands, becoming hostile after this period unless another effects prevents it",
+				"- 10th Round. The Target is Banished to its home plane and can't leave it for a number of years equals to your level. And you become sworn enemy of the target.",
+				"This spell only works on a creature whose true name is in the material component used to cast this spell."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"m": {
+					"text": "A sheet of Illuminated velum decorated with gold leaf, where the spell and the True Name of the target are written with ruby infused inks, Costing a total of at least 6000gp",
+					"cost": 600000
+				}
+			},
+			"conditionInflict": [
+				"charmed"
+			]
+		},
+		{
+			"name": "True Name",
+			"level": 7,
+			"school": "E",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You target a creature whose True Name you know.",
+				"A true name is often an usually secret and unknown even to the creature it belongs to , and must be learned through lengthy investigation, arcana and spellcasting on a place that may contain such names , and takes a minimum of 12 months, but may take decades.",
+				"Upon casting the spell you must use the Creature's true name among with verses and rhymes and each of this rhymes taking one action that adds to the Casting Time. The casting time is counted as actions, and the effect  triggers on the final action (5 Rounds means  you start casting on round 1 and on the 5th it goes off with that action)",
+				"When casting this spell you choose one of the following effects:",
+				"*Multiple Suggestion*  The Target must make a wisdom save against the suggestion spell. The Number of suggestions you can give the target is equals to the number of rounds you spent casting the spell, minimum of 1. The effect of this suggestions last for 7 days.",
+				"*Weakness and Surrender* The Target must make a Con save or loose {@dice 1d4} Strength for each round you spent casting the spell, if the target is reduced to 0 strength it becomes {@condition prone} and cannot ends the condition on their own. The Reduction ends after 1 hour or by a Greater Restoration or similar spell.",
+				"*Polymorph* The target must make a Wisdom save or be polymorphed for 1 hour. Depending on the change this takes different casting times",
+				"Creature to Beast 1 action",
+				"Mineral to Mineral 1 action",
+				"Vegetable to Vegetable 1 action",
+				"Creature to Creature: 2 rounds",
+				"Creature to Object: 5 Rounds",
+				"Object to Creature: 5 Rounds",
+				"The Target behaves as would be normal for its new form but keeps their hp",
+				"**Transport** You teleport a creature to other location with out error, as long the location exists and you know of it. Unwilling creatures must succeed a wisdom save or be teleported.",
+				"The Range of the Teleportation depends on the Casting time",
+				"500ft 1 action",
+				"Same Plane With in 100 Miles: 4 Rounds",
+				"Same Plane: 6 Rounds",
+				"Different Plane: 6 Rounds+ number of planes between this plane and target plane to a maximum of 3 planes.",
+				"**Domination** Target Must  succeed a charisma save or be forced to serve you.  The Target follows your  Commands at the best of its ability and is {@condition charmed}. The Target Knows its under dominaton but wont be able to twist your commands"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			]
+		},
+		{
+			"name": "Cacofiend",
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a fiend whose name you know into a spot you can see with in range. The Fiend must make a wisdom save or be summoned, if its True Name is used in the spell it fails the save automatically.",
+				"The Fiend appears on the spot and is often hostile. The Spell does not provide any protection against it, not does charm it or dominate it, all protection, wards or any preventive measures are up to the caster before summoning.",
+				"The Fiend may be negotiated with ,Convinced, Coerced mundanely or with sells such as spiritwrack ,Bound, Dominated or Imprisoned.",
+				"The Spell fails is the fiend you try to summon is was destroyed, imprisoned or in the same plane as you."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Candles, Incence and  sheet of parchment with the Target's name on it,  which  the spell consumes"
+			}
+		},
+		{
+			"name": "Create Atmosphere",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "month",
+						"amount": 6
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You Create a breathable and renewable Atmosphere in a point you can see with in range, in cube of up to 1 mile (1x1x1).",
+				"The Area remains for the duration or until destroyed, this spell cant be Dispeled. ",
+				"The spell can be cated on an object, centering the area on it, the area moves with that object.",
+				"You may Reverse this spell, destroying any Atmosphere Created by this spell"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A closed flask and a drop of water"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"Casting tis spell with a 9th lvl slot increases the duration to 2 years."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bind",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You command a rope like object with in range. The object becomes animated and follows your commands.",
+				"Each Round you may give it a Command as a Bonus action.",
+				"Coil: The Rope Coils in a neat sack",
+				"Uncoil: It uncoils to its maximum length",
+				"Knot: It Form a Knot, uses your DC to be Unknotted",
+				"Unknot: It Unknots unless something prevents it.",
+				"Snare: It moves up to 30ft and wraps around a target, the Target must make a Dexterity Saving throw or be {@condition restrained}, Escape DC is your DC. The object must be at least 80ft long to Snare Huge or larger creatures."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A Rope like objct, such as chains, rope, yarn or cords"
+			},
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Accuracy",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You imbue up to 20 missiles, that fit with in a 10 cube, with unatural accuracy. When used the misiles ignore Half and three-quarters cover and the user of the missile does not gain disadvantage while atacking longer than the weapon's normal range, no benefit is gained beyond that distance.",
+				"The missile is not magical for instances of bypassing resistances and Once used the spell end on the missile."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Ink and A 1gp+ brush"
+			}
+		},
+		{
+			"name": "Whip",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You manifest a Whip of magical force in your hand.",
+				"The whip uses your spell atack, has reach and deals {@dice 2d6}+spellcasting mod Force damage. ",
+				"Whenever you hit a creature you may use your reaction to pull an item in their hands towards you, they must make a Strenght save or drop the item, the item is then pulled to your free hand or lands at your feet.",
+				"Whenever you make an atack , beasts with in 30ft must make a wisdom save or be {@condition frightened}."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A silken whip handle worth atleast 1sp"
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage of this spell increases by {@dice 1d6} for each slot above second used to cast it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fire Rain",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You cause a rain of fire to fall in a 30ft radius 30ft tall Cylinder with in range.",
+				"Fire rains from above, Creatures i the area must make a Dexterity save",
+				"Failure. They take {@damage 5d8} fire damage.",
+				"Success. Half damage",
+				"Roofs and other covers block the fall of the fire, protecting creatures under such.",
+				"Flamable objects and structures in the area start burning"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"m": "A blowpipe and a mouthful of oil"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage of the spell increases by {@dice 1d8} for each spell slot above 3rd used to cast the spell"
+					]
+				}
+			]
+		},
+		{
+			"name": "Melt Metal",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a non-magical metal object that fits with in a 1ft cube and infuse it with healt. The object then melts. Creatures incontact with the melting metal take {@damage 6d6} fire damage. ",
+				"The metal remain melted until normaly cools down."
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A gemstone worth 100+gp",
+					"cost": 10000
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When casting this spell with a 6th level slot you may melt a 5ft cube of metal. and increasing by 1 ft for each slot above 6th lvl used to cast the spell"
+					]
+				}
+			]
+		},
+		{
+			"name": "Surelife",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				},
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You Become immune to death by natural causes and chance.",
+				"While the spell last you are Immune to damage and effects of hazards, objects, diseases and non magical traps.",
+				"The spell does not cure diseases but halts them. ",
+				"The spel has no effect against atacks from creatures, spells, magical traps or abilities from creatures.",
+				"When casted with full minute the spell lasts 24 hours",
+				"When casted as a reaction the spell lasts 10 mins"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Peach oiment and Cinabar with a cost of 500+gp wich the spell consumes"
+				}
+			}
+		},
+		{
+			"name": "Infernal Fire",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You target a creature you can see with in range. ",
+				"The creatures sudenly burst into Flames ins a 10ft radius. ",
+				"If the creature its current hp is 50 or less it expodes into flames and dies, If th Creature is resistant fire, or has more than 50 hp, it takes {@dice 10d12} fire damge instead.",
+				"Creatures in the area of the spell must make a Dexterity save , on a failure if they have 50hp or less they die. If they are Resistant to fire or have more than 50hp they take {@dice 10d12} fire instead.",
+				"Creatures immune to fire are not harmed or killed by this spell"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "An iron Brazier filled with red hot coal"
+			}
 		}
 	],
 	"monster": [
