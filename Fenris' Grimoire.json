@@ -4977,6 +4977,106 @@
 				"s": true,
 				"m": "An iron Brazier filled with red hot coal"
 			}
+		},
+		{
+			"name": "Slay Living",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You Touch a creature other than undead or construct.",
+				"The creature must make a Constition save.",
+				"Failure. The Target takes {@damage 15d6} necrotic damage, and if reduced to 0 hit points it dies.",
+				"Success. Half Damage and no instant death.",
+				"This spell does not affect creatures undear the Death Ward Spell"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The Damage increases by {@dice 3d6} for each spell slot lvl above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			]
+		},
+		{
+			"name": "Destruction",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You point a creature with in range.",
+				"The Target must make a Constitution Save.",
+				"Failure. Target Takes {@damage 12d6} Necrotic Damage, A Corpse, Dying Creature or Creature Reduced to 0hp dies and their body is completly destroyed. Only a True Resurrection spell  can revive the target.",
+				"On a success the Target takes {@damage 12d6} damage and no other effect.",
+				"Creatures under the Effect of Death Ward Automatically Succeed the Save"
+			],
+			"source": "FenrisGrimoire",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A special Holy symbol of your deity decorated with script of death , worth 500gp+"
+				}
+			}
 		}
 	],
 	"monster": [
